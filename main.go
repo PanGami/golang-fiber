@@ -14,7 +14,7 @@ func main() {
 	app.Get("/api/check", func(c *fiber.Ctx) error {
 		return c.Status(200).JSON(fiber.Map{
 			"status":  "success",
-			"message": "Golang, Fiber, Gorm Go Project has been successfully",
+			"message": "Golang, Fiber, Gorm Go Project has been successfully executed",
 		})
 	})
 	log.Fatal(app.Listen("localhost:8000"))
